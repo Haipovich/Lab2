@@ -4,6 +4,9 @@ public class Name_new {
     private String middle_name;
 
     public Name_new(String first_name, String last_name, String middle_name) {
+        if ((last_name == null || last_name.isEmpty()) && (first_name == null || first_name.isEmpty())) {
+            throw new IllegalArgumentException("Name or surname must not be null");
+        }
         this.first_name = first_name;
         this.last_name = last_name;
         this.middle_name = middle_name;

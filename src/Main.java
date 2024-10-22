@@ -47,9 +47,10 @@ public class Main {
                     System.out.println(nmw4);
                     break;
                 case 6:
-                    Fraction f1 = new Fraction(1, 3);
-                    Fraction f2 = new Fraction(2, 5);
-                    Fraction f3 = new Fraction(1, 6);
+                    System.out.println("Enter 3 fraction in format(x y):");
+                    Fraction f1 = new Fraction(scan.nextInt(), scan.nextInt());
+                    Fraction f2 = new Fraction(scan.nextInt(), scan.nextInt());
+                    Fraction f3 = new Fraction(scan.nextInt(), scan.nextInt());
                     System.out.println(f1 + " + " + f2 + " = " + f1.sum(f2));
                     System.out.println(f1 + " - " + f2 + " = " + f1.minus(f2));
                     System.out.println(f1 + " * " + f3 + " = " + f1.multiply(f3));

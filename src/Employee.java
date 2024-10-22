@@ -6,6 +6,9 @@ class Department {
     private ArrayList<Employee> employees;
 
     public Department(String name) {
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Department name cannot be null or empty");
+        }
         this.name = name;
         this.employees = new ArrayList<>();
     }
@@ -26,7 +29,7 @@ class Department {
             sb.append(em.get_name()).append(", ");
         }
         if (sb.length() > 0) {
-            sb.setLength(sb.length() - 2); // Remove the last ", "
+            sb.setLength(sb.length() - 2);
         }
         return sb.toString();
     }
@@ -37,6 +40,9 @@ class Employee {
     private Department department;
 
     public Employee(String name, Department department) {
+        if (department == null || name == null || name.isEmpty()) {
+            throw new NullPointerException("Department and name is null or empty");
+        }
         this.name = name;
         this.department = department;
         department.add_employee(this);
