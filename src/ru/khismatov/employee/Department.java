@@ -1,4 +1,4 @@
-package ru.Khismatov.Employee;
+package ru.khismatov.employee;
 
 /* Создайте сущность Сотрудник, которая описывается именем (в строковой форме) и отделом,
  в котором сотрудник работает, причем у каждого отдела есть название и начальник,
@@ -27,11 +27,17 @@ public class Department {
         }
     }
 
-    public void setHead(Employee head) {this.head = head;}
+    public void setHead(Employee head) {
+        this.head = head;
+    }
 
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 
-    public Employee getHead() {return head;}
+    public Employee getHead() {
+        return head;
+    }
 
     public String getEmployeeNames() { 
         StringBuilder sb = new StringBuilder();
