@@ -2,12 +2,12 @@ package ru.khismatov;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import ru.Khismatov.Name.Name;
-import ru.Khismatov.Name.NameNew;
-import ru.Khismatov.House.House;
-import ru.Khismatov.Employee.Department;
-import ru.Khismatov.Employee.Employee;
-import ru.Khismatov.Math.Fraction;
+import ru.khismatov.name.Name;
+import ru.khismatov.name.NameNew;
+import ru.khismatov.house.House;
+import ru.khismatov.employee.Department;
+import ru.khismatov.employee.Employee;
+import ru.khismatov.math.Fraction;
 
 public class Main {
     public static void main(String[] args) {
