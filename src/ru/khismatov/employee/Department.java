@@ -17,7 +17,7 @@
 * можно было бы узнать список всех сотрудников этого отдела.
 */
 
-package ru.khismatov.employee;\
+package ru.khismatov.employee;
 
 import java.util.ArrayList;
 
