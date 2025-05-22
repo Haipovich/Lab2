@@ -1,4 +1,4 @@
-package ru.Khismatov;
+package ru.khismatov;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
